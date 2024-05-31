@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.box1 {
+  height: 250px;
+  width: 250px;
+  background-color: green;
+}
+
+.box2 {
+  height: 250px;
+  width: 250px;
+  background-color: rgb(128, 75, 0);
+}
+
+.box3 {
+  height: 250px;
+  width: 250px;
+  background-color: rgb(0, 0, 128);
+}
+
+.clickbox {
+
+  height: 250px;
+  width: 250px;
+  background-color: rgb(0, 0, 128);
+}
+
+.hellobtn {
+  height: 50px;
+  width: 150px;
+  background-color: red;
+  border: none;
+  display: flex;
+  outline: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.hellotext {
+  color: white;
+  font-size: 24px;
+}
+
+.hellobye {
+  color: white;
+  font-size: 24px;
+  display: none;
+  transform: translate(0, 20px);
+}
+
+.div1,
+.div2,
+.div3,
+.div6,
+.div7,
+.div8 {
+  height: 100vh;
+  overflow-x: hidden;
+
+}
+
+.div1 {
+  background: rgb(126, 128, 0);
+}
+
+.div2 {
+  background: rgb(34, 0, 128);
+}
+
+.div3 {
+  background: rgb(128, 0, 111);
+}
+
+.div2box {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  /* opacity:0 */
+}
+
+.div6 {
+  background-color: aqua;
+}
+
+.div7 {
+  background-color: azure;
+
+}
+
+.div8 {
+  background-color: rgb(105, 98, 173);
+
+}
+
+ul {
+  display: inline-block;
+}
+
+.list1 {
+  opacity: 0;
+}
+
+.box {
+  width: 200px;
+}
+
+.div5 {
+  background-color: burlywood;
+  /* height: 100vh; */
+  overflow-x: hidden;
+}
+
+.itemstoScroll {
+  width: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.itemstoScroll h1 {
+  font-size: 30vw;
+  flex-shrink: 0;
+  padding: 0 0em;
+  margin: 0;
+}
+
+img {
+  height: 100vh;
+  width: 100dvw;
+  /* width: 100vw; */
+  object-fit: cover;
+}
+
+.listcenter {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1,
+}
+
+.div7 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.cards {
+  height: 600px;
+  width: 500px;
+  background-color: #b11b59;
+
+}
+
+.div8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg {
+  width: "1000px";
+  height: "200px";
+  /* background-color: yellow; */
+}

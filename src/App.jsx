@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import Lenis from "lenis";
-import image from "./assets/1.jpg";
+
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const App = () => {
@@ -14,16 +14,16 @@ const App = () => {
     end: "bottom top",
     scrub: 1,
   };
-  useEffect(() => {
-    const lenis = new Lenis();
+  // useEffect(() => {
+  //   const lenis = new Lenis();
 
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
+  //   function raf(time) {
+  //     lenis.raf(time);
+  //     requestAnimationFrame(raf);
+  //   }
 
-    requestAnimationFrame(raf);
-  }, []);
+  //   requestAnimationFrame(raf);
+  // }, []);
 
   useGSAP(() => {
     gsap.to(".bgText", {
@@ -93,11 +93,13 @@ const App = () => {
 
     gsap.to('.spacer4',{
       y: '0%',
+      ease: 'power3.out',
       scrollTrigger:{
         trigger: '.spacer3',
-        start: 'top 20%',
+        start: 'top top',
         end: 'bottom top',
-        scrub: 1
+        scrub: 1,
+        markers: true
       }
     })
 
@@ -109,9 +111,9 @@ const App = () => {
       <section className="spacer"></section>
 
       <section className="content">
-        <img src={image} alt="" loading="lazy" className="image image1" />
-        <img src={image} alt="" loading="lazy" className="image image2" />
-        <img src={image} alt="" loading="lazy" className="image image3" />
+        <img src='https://i.postimg.cc/ncGPchcY/1.jpg' alt="" loading="lazy" className="image image1" />
+        <img src='https://i.postimg.cc/ncGPchcY/1.jpg' alt="" loading="lazy" className="image image2" />
+        <img src='https://i.postimg.cc/ncGPchcY/1.jpg' alt="" loading="lazy" className="image image3" />
         <div className="textcontent">Hello</div>
         <div className="bgText">World</div>
       </section>

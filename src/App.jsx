@@ -55,7 +55,7 @@ const App = () => {
         start: "top 10%",
         end: "top -10%",
         scrub: 1,
-        markers: true,
+        // markers: true,
       },
     });
     gsap.to("body", {
@@ -96,7 +96,7 @@ const App = () => {
       ease: 'power3.out',
       scrollTrigger:{
         trigger: '.spacer3',
-        start: 'top top',
+        start: 'top 30%',
         end: 'bottom top',
         scrub: 1,
         markers: true
